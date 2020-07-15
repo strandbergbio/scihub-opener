@@ -1,0 +1,28 @@
+{
+  "name": "SciHub Opener",
+  "description" : "Base Level Extension",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "sci-hub.png",
+    "default_title": "SciHub"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "options_page": "options.html",
+  "manifest_version": 2,
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+S",
+        "mac": "Command+Shift+S"
+      },
+      "description": "Opens new tab in sci-hub"
+    }
+  },
+  "permissions": [
+    "tabs",
+    "storage"
+  ]
+}
